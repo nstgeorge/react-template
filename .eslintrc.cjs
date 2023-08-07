@@ -1,7 +1,3 @@
-// const react = require('eslint-plugin-react');
-// const globals = require('globals');
-// const reactRecommended = require('eslint-plugin-react/configs/recommended');
-
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
@@ -22,29 +18,3 @@ module.exports = {
     ],
   },
 }
-
-// export default [
-//   reactRecommended,
-//   {
-//     files: ['**/*.{js,jsx,mjs,cjs,ts,tsx}'],
-//     plugins: {
-//       react,
-//     },
-//     languageOptions: {
-//       parserOptions: {
-//         ecmaFeatures: {
-//           jsx: true,
-//         },
-//       },
-//       globals: {
-//         ...globals.browser,
-//       },
-//     },
-//     rules: {
-//       // ... any rules you want
-//       'react/jsx-uses-react': 'error',
-//       'react/jsx-uses-vars': 'error',
-//      },
-//     // ... others are omitted for brevity
-//   }
-// ];
