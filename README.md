@@ -13,7 +13,7 @@ npm install # install dependencies
 npm run dev # start dev server
 ```
 
-That should be it! Your page is at [localhost:5173](localhost:5173) by default. Feel free to use the few UI elements I have in here.
+That should be it! Your page is at [localhost:5173](http://localhost:5173) by default. Feel free to use the few UI elements I have in here.
 
 ## Important Libraries and Frameworks
 
