@@ -1,6 +1,7 @@
 import { Transition } from "@headlessui/react";
+import { motion } from "framer-motion";
 import { Github, Orbit } from "lucide-react";
-import { Fragment } from "react";
+import { Fragment, useRef } from "react";
 import tw from "twin.macro";
 import { modal } from "../../common/transitions";
 import { Content, Title1 } from "../common/Typography";
@@ -15,8 +16,17 @@ const Rule = tw.hr`
   border-gray-600 mt-5
 `
 
+const Header = tw.div`
+  flex items-center justify-center
+  w-full h-40
+`
+
+const IconContainer = tw(motion.div)`
+
+`
+
 const HeaderIcon = tw(Orbit)`
-  w-16 h-16 my-10 mx-auto animate-spin [animation-duration: 8s] stroke-gray-400
+  w-16 h-16 animate-spin [animation-duration: 8s] stroke-gray-400
 `
 
 const GithubIcon = tw(Github)`
@@ -37,6 +47,8 @@ const PromoLink = tw.a`
 `
 
 export default function Home(props) {
+  const dragContainerRef = useRef()
+
   return (
     <Transition
       show={true}
@@ -45,7 +57,11 @@ export default function Home(props) {
       as={Fragment}
     >
       <Body>
-        <HeaderIcon />
+        <Header ref={dragContainerRef}>
+          <IconContainer drag dragConstraints={dragContainerRef} dragSnapToOrigin={true}>
+            <HeaderIcon />
+          </IconContainer>
+        </Header>
         <Title1 tw='text-center'>Make something cool.</Title1>
         <Rule />
         <Content>Everything looks good on my end...</Content>
