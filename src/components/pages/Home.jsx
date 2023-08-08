@@ -9,7 +9,7 @@ import { Content, Title1 } from "../common/Typography";
 const Body = tw.div`
   mx-auto bg-none md:bg-gradient-to-tr from-gray-800 to-gray-700 my-20 max-w-2xl flex flex-col gap-2
   px-7 md:px-14 py-5
-  rounded shadow-md
+  rounded md:shadow-md
 `
 
 const Rule = tw.hr`
@@ -26,7 +26,7 @@ const IconContainer = tw(motion.div)`
 `
 
 const HeaderIcon = tw(Orbit)`
-  w-16 h-16 animate-spin [animation-duration: 8s] stroke-gray-400
+  w-20 h-20 p-2 animate-spin [animation-duration: 8s] stroke-gray-400 bg-gray-700 rounded-full overflow-visible
 `
 
 const GithubIcon = tw(Github)`

@@ -5,8 +5,6 @@
   "type": "module",
   "homepage": "https://nstgeorge.github.io/react-template/",
   "scripts": {
-    "predeploy": "cross-env VITE_BASE_PATH='/react-template/' npm run build -- --base=/react-template/",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
