@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nstgeorge.github.io/react-template",
+  "homepage": "https://nstgeorge.github.io/react-template/",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "cross-env VITE_BASE_PATH='/react-template/' npm run build -- --base=/react-template/",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.16",
     "@headlessui/tailwindcss": "^0.2.0",
+    "cross-env": "^7.0.3",
     "framer-motion": "^10.15.1",
     "localforage": "^1.10.0",
     "lucide-react": "^0.265.0",

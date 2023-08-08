@@ -14,6 +14,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <GlobalStyles />
-    <RouterProvider router={router} />
+    <RouterProvider basename={import.meta.env.VITE_PAGES_DEPLOY ? '/react-template/' : '/'} router={router} />
   </React.StrictMode>,
 )
