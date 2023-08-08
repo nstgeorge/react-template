@@ -2,8 +2,6 @@
 
 This is the template I use for new React projects.
 
-[Example deployment here.](https://nstgeorge.github.io/react-template/)
-
 ## How to Use
 
 I recommend using degit to grab this repo, or you can click the "Use this template" button above.
