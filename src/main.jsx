@@ -9,11 +9,13 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />
   }
-])
+], {
+  basename: import.meta.env.VITE_PAGES_DEPLOY ? '/react-template' : '/'
+})
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <GlobalStyles />
-    <RouterProvider basename={import.meta.env.VITE_PAGES_DEPLOY ? '/react-template/' : '/'} router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
