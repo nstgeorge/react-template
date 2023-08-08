@@ -15,14 +15,6 @@ npm run dev # start dev server
 
 That should be it! Your page is at [localhost:5173](http://localhost:5173) by default. Feel free to use the few UI elements I have in here.
 
-### Deployment
-
-If you are deploying with GitHub Pages, there is some configuration you'll have to remove. In `package.json` replace the predeploy script with your own (or use this example):
-
-```json
-"predeploy": "npm run build",
-```
-
 ## Important Libraries and Frameworks
 
 Check these links for documentation.
